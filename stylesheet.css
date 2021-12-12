@@ -22,6 +22,7 @@ body{
     text-align: center;
     text-shadow: 5px 5px 4px var(--shadow-color);
     font-size: var(--header-font-size);
+    text-decoration: underline;
 }
 
 main{
@@ -33,8 +34,6 @@ main{
 
 /* Baggrunden på elementerne bag Modalboksen */
 .modal {
-    margin-left: auto;
-    margin-right: auto;
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -48,9 +47,22 @@ main{
     background-color: rgba(0, 0, 0, .3); /* Black w/ opacity */
 }
 
-/* Modal Content */
+.modal1 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 25px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, .3); /* Black w/ opacity */
+}
+
+/* Indholdet af  */
 .modal-content {
-    opacity: 1;
     background-color: var(--modalboxbgn-color);
     margin: auto;
     padding: 20px;
@@ -58,7 +70,7 @@ main{
     width: 80%;
 }
 
-/* The Close Button */
+/* Close knappen i højre hjørne */
 .close {
     color: #000000;
     float: right;
@@ -66,7 +78,9 @@ main{
     font-weight: bold;
 }
 
+/* Modal-knappernes css værdier */
 .modalbuttons{
+    margin: 1rem;
     font-size: var(--button-font-size);
     color: black;
     background-color: var(--modalboxbgn-color);
