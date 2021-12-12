@@ -20,35 +20,45 @@
     <!-- Hoveddelen på min side -->
     <main>
         <!-- For at kunne lave mine modal bokse, har jeg benyttet linket nedenunder -->
-        <!-- https://www.w3schools.com/howto/howto_css_modals.asp -->
+        <!-- https://stackoverflow.com/questions/40645032/creating-multiple-modals-on-a-single-page -->
 
         <!-- Knappen der åbner min modalboks om mig -->
-        <button id="myBtn" class="modalbuttons">Hvem er jeg?</button>
+        <button class="modal-button" href="#myModal1">Hvem er jeg?</button>
 
         <!-- Modalboks (Hvem er jeg?) -->
-        <div id="myModal" class="modal">
-            <!-- Indholdet af mine modal bokse -->
-            <div class="modal-content">
-                <!-- Close knap, som er placeret oppe i højre hjørne -->
-                <span class="close">&times;</span>
+        <div id="myModal1" class="modal">
 
-                <!-- Tekst og billeder i modal boksen -->
-                <h2>Hvem er jeg?</h2>
+            <!-- Indholdet i Modal boksen -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!-- Lukkeknappen oppe i højre hjørne -->
+                    <span class="close">×</span>
+                    <h2>Hvem er jeg?</h2>
+                </div>
+                <div class="modal-body">
+                    <p>Some text in the Modal Body</p>
+                    <p>Some other text...</p>
+                </div>
             </div>
         </div>
 
         <!-- Knappen der åbner min modalboks om mine XD - Mockups -->
-        <button id="myBtn" class="modalbuttons">XD - Mockups</button>
+        <button class="modal-button" href="#myModal2">XD - Mockups</button>
 
-        <!-- Modalboks (XD - Mockups) -->
-        <div id="myModal" class="modal">
-            <!-- Indholdet af mine modal bokse -->
+        <!-- Modalboks (Hvem er jeg?) -->
+        <div id="myModal2" class="modal">
+
+            <!-- Indholdet i Modal boksen -->
             <div class="modal-content">
-                <!-- Close knap, som er placeret oppe i højre hjørne -->
-                <span class="close">&times;</span>
-
-                <!-- Tekst og billeder i modal boksen -->
-                <h2>XD - Mockups</h2>
+                <div class="modal-header">
+                    <!-- Lukkeknappen oppe i højre hjørne -->
+                    <span class="close">×</span>
+                    <h2>XD - Mockups</h2>
+                </div>
+                <div class="modal-body">
+                    <p>Some text in the Modal Body</p>
+                    <p>Some other text...</p>
+                </div>
             </div>
         </div>
 
