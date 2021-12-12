@@ -1,0 +1,43 @@
+<!-- HTML -->
+<!-- Index side -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Diverse ting, såsom stylesheet og charset -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <!-- Title -->
+    <title>Pedersen Portfolio</title>
+</head>
+<body>
+    <!-- Headeren på min side -->
+    <header>
+        <h1 class="header-name">Rasmus Pedersen</h1>
+    </header>
+
+    <!-- Hoveddelen på min side -->
+    <main>
+        <!-- For at kunne lave mine modal bokse, har jeg benyttet linket nedenunder -->
+        <!-- https://www.w3schools.com/howto/howto_css_modals.asp -->
+
+        <!-- Knappen der åbner min modalboks -->
+        <button id="myBtn" class="modalbuttons">Open Modal</button>
+
+        <!-- Modal boksens helhed -->
+        <div id="myModal" class="modal">
+
+            <!-- Indholdet af mine modal bokse -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Some text in the Modal..</p>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Linking af min seperate javascript fil-->
+    <script src="javascript.js"></script>
+</body>
+</html>

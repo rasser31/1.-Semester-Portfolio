@@ -1,0 +1,78 @@
+/* CSS dokument */
+
+/* Her indsætter jeg de hovedelementer jeg benytter igennem min kode, såsom størrelser på kanter eller ligende */
+:root{
+    --shadow-color: #212121;
+    --modalboxbgn-color: rgba(206, 206, 206, .90);
+    --button-border: 2px solid #4d4d4d; 
+    --button-border-radius: 25px; 
+    --button-font-size: 1.3rem;
+    --header-font-size: 2.5rem;
+}
+
+
+/* CSS elementer der tilhøre kroppen på hjemmesiden */
+body{
+    background-image: url("images/extra/Portfolio-background.jpg");
+    background-size: 82rem;
+    background-position: 70% 0%;
+}
+
+.header-name{
+    text-align: center;
+    text-shadow: 5px 5px 4px var(--shadow-color);
+    font-size: var(--header-font-size);
+}
+
+main{
+    text-align: center;
+}
+
+/* For at kunne lave mine modal bokse, har jeg benyttet linket nedenunder */
+/* https://www.w3schools.com/howto/howto_css_modals.asp */
+
+/* Baggrunden på elementerne bag Modalboksen */
+.modal {
+    margin-left: auto;
+    margin-right: auto;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 25px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, .3); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    opacity: 1;
+    background-color: var(--modalboxbgn-color);
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #000000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modalbuttons{
+    font-size: var(--button-font-size);
+    color: black;
+    background-color: var(--modalboxbgn-color);
+    width: 15rem;
+    height: 5rem;
+    mix-blend-mode: hard-light;
+    border-radius: var(--button-border-radius);
+    border: var(--button-border);
+}
