@@ -1,4 +1,6 @@
+/* ------------ */
 /* CSS dokument */
+/* ------------ */
 
 /* Her indsætter jeg de hovedelementer jeg benytter igennem min kode, såsom størrelser på kanter eller ligende */
 :root{
@@ -10,31 +12,30 @@
     --header-font-size: 2.5rem;
 }
 
-
 /* CSS elementer der tilhøre kroppen på hjemmesiden */
 body{
     background-image: url("images/extra/Portfolio-background.jpg");
+    background-repeat: no-repeat;
     background-size: 82rem;
     background-position: 70% 0%;
+    text-align: center;
 }
 
+/* Headerens værdier (Mit navn) */
 .header-name{
     text-align: center;
     text-shadow: 5px 5px 4px var(--shadow-color);
     font-size: var(--header-font-size);
     text-decoration: underline;
 }
-
-main{
-    text-align: center;
-}
-
+/* ------------------------------------ */
 /* For at kunne lave mine modal bokse, har jeg benyttet linket nedenunder */
 /* https://stackoverflow.com/questions/40645032/creating-multiple-modals-on-a-single-page */
+/* ------------------------------------ */
 
-/* The Modal (background) */
+/* Modal kasserne  */
 .modal {
-    display: none; /* Hidden by default */
+    display: none;
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     padding-top: 100px; /* Location of the box */
@@ -43,11 +44,11 @@ main{
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, .4); /* Black w/ opacity */
 }
 
-/* Modal Content */
+/* Indhold af mine modal bokse */
 .modal-content {
     position: relative;
     background-color: #fefefe;
@@ -56,18 +57,17 @@ main{
     border: 1px solid #888;
     width: 80%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    /* Tilføjelse af animations navn og længde */
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
     animation-duration: 0.4s
 }
-
-/* Add Animation */
+/* ^^^ TIlføjelse af animationer på modal boksene (Når der bliver trykket på tilhørende knap) */
 @-webkit-keyframes animatetop {
     from {top:-300px; opacity:0}
     to {top:0; opacity:1}
 }
-
 @keyframes animatetop {
     from {top:-300px; opacity:0}
     to {top:0; opacity:1}
@@ -75,26 +75,41 @@ main{
 
 /* The Close Button */
 .close {
-    color: white;
+    text-shadow: none;
+    color: #000;
     float: right;
-    font-size: 28px;
+    font-size: 35px;
     font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}
-
+/* Tekstens ændringer i headeren (Modal boksene) */
 .modal-header {
     padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
+    color: #000;
+    text-shadow: 5px 5px 4px var(--shadow-color);
 }
 
-.modal-body {padding: 2px 16px;}
+/* Baggrundene på mine header (Modal bokse) */
+.modal-background1{
+    background-image: url("images/modal-bokse/modal1.png");
+}
+.modal-background2{
+    background-image: url("images/modal-bokse/modal2.png");
+}
+.modal-background3{
+    background-image: url("images/modal-bokse/modal3.png");
+}
+.modal-background4{
+    background-image: url("images/modal-bokse/modal4.png");
+}
+.modal-background5{
+    background-image: url("images/modal-bokse/modal5.png");
+}
+
+/* Paddingen i mine informationsfelter (Modal bokse) */
+.modal-body {
+    padding: 1rem;
+}
 
 /* Modal-knappernes css værdier */
 .modal-button{
