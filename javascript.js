@@ -2,10 +2,10 @@
 // Javascript dokument
 // -------------------
 
-// -----------------------------------------------------------------------------------------
-/* For at kunne lave mine modal bokse, har jeg benyttet linket nedenunder */
-/* https://stackoverflow.com/questions/40645032/creating-multiple-modals-on-a-single-page */
-// -----------------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------------
+// For at kunne lave mine modal bokse, har jeg benyttet linket nedenunder
+// https://stackoverflow.com/questions/40645032/creating-multiple-modals-on-a-single-page
+// --------------------------------------------------------------------------------------
 
 // Her laver jeg en variabel jeg kan benytte med min knap
 var btn = document.querySelectorAll("button.modal-button");
